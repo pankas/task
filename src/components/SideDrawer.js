@@ -55,7 +55,7 @@ class sideDrawer extends React.Component{
   render(){
     return(
       <div>
-          <nav className={this.props.show?'side-drawer bg-dark open':'side-drawer'}>
+          <nav className={this.props.show?'nav-drawer bg-dark open':'nav-drawer'}>
               <div className="navbar-brand mt-5">
               <ul >
                 {

@@ -13,7 +13,6 @@ if(process.env.NODE_ENV==="development"){
         config.getUsers = "http://quiet-bayou-33585.herokuapp.com/api/users"
         config.update = "http://quiet-bayou-33585.herokuapp.com/api/update"
         config.sendMail = "http://quiet-bayou-33585.herokuapp.com/api/send-mail"
-    
     }
 else
 {

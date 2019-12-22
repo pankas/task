@@ -17,7 +17,6 @@ class Details extends React.Component {
     }
 
     componentDidMount(){
-        console.log("props userrs",this.props.user.type)
         this.setState({
             firstname:this.props.user.firstname,
             lastname:this.props.user.lastname,

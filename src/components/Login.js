@@ -25,7 +25,6 @@ class Login extends React.Component{
         }
         this.props.login(val,()=>{
             let data = Object.keys(this.props.user);
-            console.log("userss",this.props.user);
             localStorage.setItem('email',this.props.user.email);
             localStorage.setItem('type',this.props.user.type);
             if(data[0] === 'error'){
@@ -60,7 +59,6 @@ class Login extends React.Component{
                                 <button type="submit" class="btn btn-success">Submit</button>
                             </div>
                             <div className="d-flex justify-content-between">
-                                <Link to="forget-password"><div>Forgot password?</div></Link>
                                 <Link to="signup"><div>New? Create an account</div></Link>
                             </div>
                         </form>

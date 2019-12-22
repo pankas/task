@@ -80,10 +80,11 @@ class UserList extends React.Component {
                             </thead>
                             <tbody>
                                 {this.state.list.map((list,index) => {
+                                    console.log("lists",list)
                                      return   <tr key={index}  >
-                                        <td >{list.firstname} {list.lastname}</td>
+                                        <td >{list.firstName} {list.lastName}</td>
                                         <td >{list.email}</td>
-                                        <td >{list.type}</td>
+                                        <td >{list.uType}</td>
                                         <td>
                                         <button  onClick={this.sendEmail.bind(this,list.email,list.firstname,list.lastname)} type="button" class="btn btn-dark">
                                               Send mail<span class="badge badge-secondary"><i className="fa fa-power-off" /></span>
