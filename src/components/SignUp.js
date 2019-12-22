@@ -38,9 +38,10 @@ class SignUp extends React.Component{
             toast.error("Passwords don't match")
         }else{
             this.props.signup(val,()=>{
+                console.log("props and user",this.props.user)
                 let data = Object.keys(this.props.user);
                 if(data[0] === 'error'){
-                        toast.error("Email id or Employee code already exists")
+                        toast.error("Email already exists")
                 }else{
                     toast.success(`Your username and password has been sent to your mail`)
                     let that = this

@@ -87,7 +87,7 @@ class UserList extends React.Component {
                                         <td >{list.uType}</td>
                                         <td>
                                         <button  onClick={this.sendEmail.bind(this,list.email,list.firstname,list.lastname)} type="button" class="btn btn-dark">
-                                              Send mail<span class="badge badge-secondary"><i className="fa fa-power-off" /></span>
+                                              Send mail
                                             </button>
                                         </td>
                                         </tr>

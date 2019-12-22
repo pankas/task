@@ -49,7 +49,7 @@ class Login extends React.Component{
                         <form onSubmit={this.handleSubmit}>
                             <div className="form-group">
                                 <label for="email">email</label>
-                                <input type="email" className="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Name" value={this.state.email} onChange={(e)=>this.setState({email:e.target.value})} required />
+                                <input type="email" className="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email" value={this.state.email} onChange={(e)=>this.setState({email:e.target.value})} required />
                             </div>
                             <div className="form-group">
                                 <label for="password">Password</label>

@@ -53,7 +53,6 @@ class UploadBuildingModal extends React.Component {
     let from = this.props.user.email;
     let subject = this.state.subject;
     let content = this.state.content;
-    console.log("skjdlsa",to,from,subject,content)
     const val ={
         "data":{
             to,
@@ -64,7 +63,8 @@ class UploadBuildingModal extends React.Component {
     }
 
     this.props.sendMail(val,()=>{
-      console.log("responses",this.props.mailResp)
+      toast.success(`Mail sent successfully`)
+      this.closeModal()
     })
   }
 
